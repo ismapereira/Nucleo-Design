@@ -150,10 +150,12 @@
         <section id="contact">
             <h2 class="section-title reveal">Vamos Conversar?</h2>
             <p class="reveal">Envie uma mensagem e vamos transformar sua ideia em um projeto incrível.</p>
-            <form class="contact-form reveal">
-                <input type="text" name="name" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+            <form class="contact-form reveal" id="contact-form">
+                <input type="text" name="name" placeholder="Seu nome" required id="name">
+                <input type="email" name="email" placeholder="Seu e-mail" required id="email"> 
+                <input type="tel" name="telefone" placeholder="Seu WhatsApp" id="phone" required>
+                <input type="text" name="assunto" placeholder="Assunto" id="subject">
+                <textarea name="message" rows="5" placeholder="Sua mensagem" required id="message"></textarea>
                 <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
@@ -171,5 +173,8 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/email.js"></script>
 </body>
 </html>
