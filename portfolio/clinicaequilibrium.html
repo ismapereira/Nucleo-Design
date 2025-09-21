@@ -147,6 +147,19 @@
                 gap: 1.5rem;
             }
 }
+
+@font-face {
+    font-family: 'MMRText';
+    src: url('../assets/fonts/MMRText.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GardensC';
+    src: url('../assets/fonts/GardensC.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
     </style>
 </head>
 <body class="antialiased">
@@ -183,7 +196,11 @@
                 <div class="w-full md:w-1/2 fade-in">
                     <h1 class="text-4xl md:text-5xl font-bold mb-4">Clínica Equilibrium</h1>
                     <p class="text-lg text-gray-300">
-                        Roti Ropi é uma marca de padaria popular na Indonésia, conhecida por seu pão de café exclusivo. O pão Roti Ropi oferece uma experiência diferente, macio e com um delicioso sabor de café.
+                        A Clínica Equilibrium é dedicada à saúde, ao bem-estar e à longevidade.
+                        <br><br>
+                        Conta com uma equipe multidisciplinar formada por profissionais de nutrição, estética, psicologia e fisioterapia, preparada para cuidar de cada pessoa com sensibilidade, acolhimento e maestria.
+                        <br><br>
+                        Mais do que serviços, a clínica oferece um espaço de troca e conexão, onde cada detalhe é pensado para o conforto. Seu propósito é promover equilíbrio, vitalidade e qualidade de vida, sempre com um olhar humano, moderno e acolhedor
                     </p>
                 </div>
                 <div class="w-full md:w-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4 text-left fade-in" style="transition-delay: 150ms;">
@@ -230,12 +247,34 @@
                 <img src="/portfolio/assets/projetos/equilibrium/P3.png" class="w-full h-full object-cover" alt="Mockup de canecas" loading="lazy">
             </div>
 
-            <!-- Texto descritivo 2 -->
-             <div class="bg-black/30 backdrop-blur-md rounded-lg p-8 flex flex-col justify-center fade-in" style="transition-delay: 400ms;">
-                <h2 class="text-3xl font-bold mb-3 brand-text">Lorem Ipsum</h2>
-                <p class="text-gray-300">
-                    Uma breve descrição sobre o processo de criação, os desafios ou a estratégia por trás do design apresentado na imagem ao lado.
+            <!-- Tipografia -->
+            <div class="rounded-xl p-8 flex flex-col justify-center fade-in relative overflow-hidden" 
+            style="transition-delay: 400ms;">
+
+            <!-- Efeito de vidro com gradiente -->
+            <div style="position: absolute; inset: 0; 
+                    background: linear-gradient(135deg, rgba(64, 180, 176, 0.05) 0%, rgba(64, 180, 176, 0.1) 100%);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);"></div>
+
+            <!-- Borda sutil -->
+            <div style="position: absolute; inset: 0; 
+                    border: 1px solid rgba(255, 255, 255, 0.1); 
+                    border-radius: 0.75rem; 
+                    pointer-events: none;"></div>
+
+            <!-- Conteúdo -->
+            <div style="position: relative; z-index: 10;">
+            <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 0.75rem; color: #f5f5f5;">Tipografia</h2>
+            <div style="text-align: center;">
+                <p style="font-family: 'GardensC'; font-size: 30px; font-weight: normal; color: #DC9F40; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    GardensC Regular
                 </p>
+                <p style="font-family: 'MMRText'; font-size: 22px; font-weight: normal; color: #46646C; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    Myanmar Text Regular
+                </p>
+            </div>
+            </div>
             </div>
 
             <!-- Logo variação 2 -->
